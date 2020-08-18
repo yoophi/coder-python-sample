@@ -83,6 +83,7 @@ WORKDIR /home/coder
 RUN git clone https://github.com/yoophi/coder-python-sample.git project
 
 WORKDIR /home/coder/project
+RUN git checkout develop
 RUN ls
 
 RUN python3 -m venv .venv
